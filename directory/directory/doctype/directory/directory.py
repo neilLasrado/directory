@@ -3,8 +3,10 @@
 # For license information, please see license.txt
 
 from __future__ import unicode_literals
-import frappe
 from frappe.model.document import Document
+from frappe.utils import validate_email_add
 
 class Directory(Document):
-	pass
+	def validate(self):
+		validate_email_add(self.email_address.strip(), True)
+		validate_email_add(self.s_email_address.strip(), True)
