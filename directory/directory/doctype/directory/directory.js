@@ -10,9 +10,10 @@ frappe.ui.form.on("Directory" ,{
 				{ "designation": "Director International Service"},
 				{ "designation": "Director Youth Services"},
 				{ "designation": "Director Public Relations"},
-				{ "designation": "Chairman TRF Support"}]);
-				{ "designation": "Chairman Thrust Areas"}]);
-				{ "designation": "Chairman Club Trainer"}]);
+				{ "designation": "Chairman TRF Support"},
+				{ "designation": "Chairman Thrust Areas"},
+				{ "designation": "Chairman Club Trainer"}
+			]);
 		}
 	}
-});
+});	
