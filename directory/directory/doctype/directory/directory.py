@@ -10,7 +10,8 @@ import re
 
 class Directory(Document):
 	def validate(self):
-		validate_email_add(self.email_address.strip(), True)
+		if self.email_address:
+			validate_email_add(self.email_address.strip(), True)
 		if self.residential_tel:
 			validate_mobile(self.residential_tel)
 		if self.office_tel:
@@ -18,7 +19,8 @@ class Directory(Document):
 		if self.mobile:
 			validate_mobile(self.mobile)
 		
-		validate_email_add(self.s_email_address.strip(), True)
+		if self.s_email_address:
+			validate_email_add(self.s_email_address.strip(), True)
 		if self.s_residential_number:
 			validate_mobile(self.s_residential_number)
 		if self.s_office_number:
