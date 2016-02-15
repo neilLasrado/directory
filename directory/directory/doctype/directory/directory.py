@@ -19,21 +19,22 @@ class Directory(Document):
 		if self.mobile:
 			validate_mobile(self.mobile)
 		
-		if self.s_email_address:
-			validate_email_add(self.s_email_address.strip(), True)
-		if self.s_residential_number:
-			validate_mobile(self.s_residential_number)
-		if self.s_office_number:
-			validate_mobile(self.s_office_number)
-		if self.s_mobile_number:
-			validate_mobile(self.s_mobile_number)
+		if self.is_directory:
+			if self.s_email_address:
+				validate_email_add(self.s_email_address.strip(), True)
+			if self.s_residential_number:
+				validate_mobile(self.s_residential_number)
+			if self.s_office_number:
+				validate_mobile(self.s_office_number)
+			if self.s_mobile_number:
+				validate_mobile(self.s_mobile_number)
 
-		for d in self.bod:
-			if d.email_address:
-				validate_email_add(d.email_address.strip(), True)
-				
-			if d.mobile_number:
-				validate_mobile(d.mobile_number)
+			for d in self.bod:
+				if d.email_address:
+					validate_email_add(d.email_address.strip(), True)
+	
+				if d.mobile_number:
+					validate_mobile(d.mobile_number)
 
 
 def validate_mobile(value):
