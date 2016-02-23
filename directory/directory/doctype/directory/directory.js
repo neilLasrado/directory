@@ -12,7 +12,8 @@ frappe.ui.form.on("Directory" ,{
 				{ "designation": "Director Public Relations"},
 				{ "designation": "Chairman TRF Support"},
 				{ "designation": "Chairman Thrust Areas"},
-				{ "designation": "Chairman Club Trainer"}
+				{ "designation": "Club Trainer"},
+				{ "designation": "Director Membership Development"}
 			]);
 		}
 	}
