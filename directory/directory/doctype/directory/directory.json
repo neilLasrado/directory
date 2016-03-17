@@ -1,6 +1,6 @@
 {
  "allow_copy": 0, 
- "allow_import": 0, 
+ "allow_import": 1, 
  "allow_rename": 0, 
  "autoname": "CLUB.###", 
  "creation": "2015-12-30 23:20:49.792201", 
@@ -1935,7 +1935,7 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2016-02-15 17:27:50.011186", 
+ "modified": "2016-03-18 00:01:21.304930", 
  "modified_by": "Administrator", 
  "module": "Directory", 
  "name": "Directory", 
